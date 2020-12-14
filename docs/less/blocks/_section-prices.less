@@ -1,0 +1,245 @@
+.section-prices {
+  padding: 69px 0 79px;
+  background-color: #49c38f;
+
+  // Медиа запрос для планшетов и выше
+  @media (min-width: 768px) {
+    padding: 56px 0 81px;
+    position: relative;
+    background-image: url(../img/prices/prices-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: black;
+
+    &::before {
+      content: "";
+      display: block;
+
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+    }
+  }
+  // Медиа запрос для десктопов и выше
+  @media (min-width: 1200px) {
+    padding: 102px 0 87px;
+  }
+}
+
+.section-prices__content {
+  position: relative;
+  text-align: center;
+}
+
+.section-prices__content-title {
+  margin-bottom: 29px;
+
+  & h2 {
+    color: white;
+    line-height: 1.5;
+  }
+  // Медиа запрос для десктопов и выше
+  @media (min-width: 1200px) {
+    margin-bottom: 67px;
+  }
+}
+
+.section-prices__content-header {
+  margin-bottom: 42px;
+
+  & h3 {
+    color: white;
+  }
+
+  // Медиа запрос для планшетов и выше
+  @media (min-width: 768px) {
+    font-size: 42px;
+    margin-bottom: 60px;
+  }
+
+  // Медиа запрос для десктопов и выше
+  @media (min-width: 1200px) {
+    margin-bottom: 77px;
+  }
+}
+
+.section-prices__content_center {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  // Медиа запрос для планшетов и выше
+  @media (min-width: 768px) {
+    flex-direction: row;
+    justify-content: center;
+    align-items: unset;
+  }
+}
+
+.price-card {
+  padding-top: 38px;
+  padding-bottom: 40px;
+  margin-bottom: 19px;
+  width: 290px;
+  background-color: rgba(0, 0, 0, 0.75);
+  border: none;
+  border-radius: 8px;
+  color: white;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &:hover {
+    background-color: #304df2;
+    transition: background-color 0.3s ease-in;
+  }
+
+  &:hover .price-card-measure {
+    background-color: #2740cc;
+    transition: background-color 0.3s ease-in;
+  }
+
+  &:hover button {
+    background-color: #ffffff;
+    color: #666666;
+    transition: background-color 0.3s ease-in;
+  }
+
+  // Медиа запрос для планшетов и выше
+  @media (min-width: 768px) {
+    width: 230px;
+    margin-bottom: 0;
+    margin-right: 24px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  // Медиа запрос для десктопов и выше
+  @media (min-width: 1200px) {
+    margin-right: 33px;
+    width: 300px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+.price-card-top {
+  padding-bottom: 26px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.price-card-title {
+  margin-bottom: 11px;
+
+  & h3 {
+    color: #b3b3b3;
+    font-size: 14px;
+    letter-spacing: 2.8px;
+  }
+}
+
+.price-card-summ {
+  margin-bottom: 15px;
+  font-size: 80px;
+  font-weight: 700;
+  letter-spacing: 4px;
+}
+
+.price-card-measure {
+  display: inline-block;
+  padding: 3px 10px 3px 14px;
+
+  border: none;
+  border-radius: 10px;
+  background-color: #2a463a;
+
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2.4px;
+  line-height: 20px;
+
+  // Медиа запрос для планшетов и выше
+  @media (min-width: 768px) {
+    background-color: #33302e;
+  }
+}
+
+.price-card-bottom {
+  padding-top: 29px;
+
+  // Медиа запрос для десктопов и выше
+  @media (min-width: 1200px) {
+    padding-top: 33px;
+  }
+}
+
+.price-list {
+  margin-bottom: 30px;
+  font-size: 16px;
+  font-weight: 500;
+  list-style: none;
+  line-height: 1.9;
+
+  // Медиа запрос для десктопов и выше
+  @media (min-width: 1200px) {
+    line-height: 1.3;
+    margin-bottom: 38px;
+  }
+}
+
+.price-list-item {
+  margin-bottom: 0;
+
+  // Медиа запрос для десктопов и выше
+  @media (min-width: 1200px) {
+    margin-bottom: 19px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.price-submit {
+  padding: 10px 30px 10px;
+  text-transform: uppercase;
+
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 25px;
+
+  font-family: "Montserrat", sans-serif;
+  color: white;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 2.5;
+  letter-spacing: 2.4px;
+
+  background-color: rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+
+  &:hover {
+    box-shadow: 0 0 10px white;
+    transition: 0.2s;
+  }
+
+  &:focus,
+  &:active {
+    outline: none;
+  }
+
+  &:active {
+    transform: scale(0.95);
+    transition: transform 0.2s ease;
+  }
+}

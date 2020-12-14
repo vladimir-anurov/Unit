@@ -1,0 +1,81 @@
+.testimonial {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 9px;
+  max-width: 520px;
+  margin: 0 auto;
+
+  // Медиа запрос для планшетов и выше
+  @media (min-width: 768px) {
+    max-width: 480px;
+  }
+
+  // Медиа запрос для десктопов и выше
+  @media (min-width: 1200px) {
+    max-width: 900px;
+    padding: 0;
+  }
+}
+
+.testimonial__text {
+  color: #808080;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 2;
+  text-align: center;
+  margin-bottom: 23px;
+
+  // Медиа запрос для планшетов и выше
+  @media (min-width: 768px) {
+    font-size: 16px;
+    line-height: 2.13;
+    margin-bottom: 36px;
+  }
+
+  // Медиа запрос для десктопов и выше
+  @media (min-width: 1200px) {
+    font-size: 18px;
+    line-height: 2.2;
+    margin-bottom: 61px;
+  }
+}
+
+.testimonial__user {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  // Медиа запрос для десктопов и выше
+  @media (min-width: 1200px) {
+    flex-direction: row;
+  }
+}
+
+.testimonial__user-photo {
+  margin-bottom: 20px;
+  width: 60px;
+  height: 60px;
+  overflow: hidden;
+  border-radius: 50%;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  // Медиа запрос для десктопов и выше
+  @media (min-width: 1200px) {
+    margin-right: 44px;
+    margin-bottom: 0;
+  }
+}
+
+.testimonial__user-name {
+  color: #808080;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.3;
+}

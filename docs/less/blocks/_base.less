@@ -1,0 +1,85 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+
+  // Медиа запрос для планшетов и выше
+  @media (min-width: 768px) {
+    max-width: 768px;
+  }
+
+  // Медиа запрос для десктопов и выше
+  @media (min-width: 1200px) {
+    max-width: 1200px;
+  }
+}
+
+.column__center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.relative {
+  position: relative;
+}
+
+.section-title {
+  color: #50e3a4;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 3.2px;
+}
+
+.section-title.section-title--small {
+  font-size: 14px;
+  letter-spacing: 2.8px;
+}
+
+.section-header {
+  color: #2e2e2e;
+  font-size: 30px;
+  font-weight: 700;
+
+  // Медиа запрос для планшетов и выше
+  @media (min-width: 768px) {
+    font-size: 42px;
+  }
+
+  // Медиа запрос для десктопов и выше
+  @media (min-width: 1200px) {
+    font-size: 48px;
+  }
+}
+
+.none {
+  display: none;
+}

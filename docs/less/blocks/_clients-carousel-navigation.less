@@ -1,0 +1,87 @@
+.owl-carousel .owl-nav button.owl-prev {
+  width: 52px;
+  height: 52px;
+
+  background-image: url(../img/carousel/arrow-left.svg);
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: center;
+
+  position: absolute;
+  bottom: -17px;
+  left: 50%;
+  margin-left: -20px;
+  transform: translate(-100%, 100%);
+
+  &:hover {
+    opacity: 0.7;
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  span {
+    display: none;
+  }
+
+  // Медиа запрос для планшетов и выше
+  @media (min-width: 768px) {
+    top: 13px;
+    left: 0;
+    bottom: auto;
+    margin-left: 0;
+    transform: unset;
+  }
+
+  // Медиа запрос для десктопов и выше
+  @media (min-width: 1200px) {
+    top: 17px;
+    left: -50px;
+    transform: translate(-100%);
+  }
+}
+
+.owl-carousel .owl-nav button.owl-next {
+  width: 52px;
+  height: 52px;
+
+  background-image: url(../img/carousel/arrow-right.svg);
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: center;
+
+  position: absolute;
+  bottom: -17px;
+  left: 50%;
+  margin-left: 20px;
+  transform: translateY(100%);
+
+  &:hover {
+    opacity: 0.7;
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  span {
+    display: none;
+  }
+  // Медиа запрос для планшетов и выше
+  @media (min-width: 768px) {
+    top: 13px;
+    right: 0;
+    left: auto;
+    bottom: auto;
+    margin-left: 0;
+    transform: unset;
+  }
+
+  // Медиа запрос для десктопов и выше
+  @media (min-width: 1200px) {
+    top: 17px;
+    right: -50px;
+    transform: translate(100%);
+  }
+}

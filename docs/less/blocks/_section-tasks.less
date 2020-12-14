@@ -1,0 +1,161 @@
+.section-tasks {
+  position: relative;
+  padding-top: 73px;
+  padding-bottom: 42px;
+  border-bottom: 1px solid #808080;
+  overflow: hidden;
+
+  // Медиа запрос для планшетов и выше
+  @media (min-width: 768px) {
+    padding-top: 68px;
+    padding-bottom: 40px;
+  }
+
+  // Медиа запрос для десктопов и выше
+  @media (min-width: 1200px) {
+    padding-top: 92px;
+    padding-bottom: 20px;
+  }
+}
+
+.section-tasks:after {
+  content: "";
+  display: block;
+
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translate(-50%, -50%) rotate(45deg);
+
+  height: 69px;
+  width: 69px;
+  background-color: #a4eecb;
+
+  // Медиа запрос для планшетов и выше
+  @media (min-width: 768px) {
+    display: none;
+  }
+
+  // Медиа запрос для десктопов и выше
+  @media (min-width: 1200px) {
+    display: block;
+
+    left: 0;
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+    height: 187px;
+    width: 187px;
+  }
+}
+
+.section-tasks__content {
+  padding-left: 7px;
+  padding-right: 7px;
+
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+
+  // Медиа запрос для планшетов и выше
+  @media (min-width: 768px) {
+    padding-left: 30px;
+    padding-right: 29px;
+    text-align: initial;
+
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  // Медиа запрос для десктопов и выше
+  @media (min-width: 1200px) {
+    padding-left: 98px;
+    padding-right: 150px;
+    flex-direction: row;
+  }
+}
+
+.section-tasks__content-desc {
+  width: 100%;
+
+  // Медиа запрос для планшетов и выше
+  @media (min-width: 768px) {
+    width: 376px;
+    height: 424px;
+  }
+
+  // Медиа запрос для десктопов и выше
+  @media (min-width: 1200px) {
+    padding-top: 32px;
+    width: 470px;
+  }
+}
+
+.section-tasks__content-desc__title {
+  margin-bottom: 32px;
+
+  // Медиа запрос для планшетов и выше
+  @media (min-width: 768px) {
+    margin-bottom: 37px;
+  }
+
+  // Медиа запрос для десктопов и выше
+  @media (min-width: 1200px) {
+    margin-bottom: 35px;
+  }
+}
+
+.section-tasks__content-desc__header {
+  margin-bottom: 35px;
+
+  // Медиа запрос для планшетов и выше
+  @media (min-width: 768px) {
+    margin-bottom: 14px;
+  }
+
+  // Медиа запрос для десктопов и выше
+  @media (min-width: 1200px) {
+    margin-bottom: 38px;
+  }
+}
+
+.section-tasks__content-desc__text {
+  margin-bottom: 56px;
+  color: #808080;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.7;
+
+  // Медиа запрос для планшетов и выше
+  @media (min-width: 768px) {
+    line-height: 2.15;
+  }
+
+  // Медиа запрос для десктопов и выше
+  @media (min-width: 1200px) {
+    margin-bottom: 0;
+  }
+}
+
+.section-tasks__content-img {
+  width: 202px;
+
+  // Медиа запрос для планшетов и выше
+  @media (min-width: 768px) {
+    width: 270px;
+  }
+
+  // Медиа запрос для десктопов и выше
+  @media (min-width: 1200px) {
+    width: 360px;
+  }
+}
+
+.section-tasks__content-img img {
+  vertical-align: top;
+  width: 100%;
+}

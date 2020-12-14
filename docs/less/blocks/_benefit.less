@@ -1,0 +1,57 @@
+.benefit {
+  text-align: center;
+}
+
+.benefit__img {
+  height: 90px;
+  margin-bottom: 12px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  // Медиа запрос для планшетов и выше
+  @media (min-width: 768px) {
+    height: 100px;
+    margin-bottom: 20px;
+  }
+
+  // Медиа запрос для десктопов и выше
+  @media (min-width: 1200px) {
+    margin-bottom: 26px;
+  }
+}
+
+.benefit__title {
+  margin-bottom: 17px;
+  color: #2e2e2e;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.3;
+
+  // Медиа запрос для планшетов и выше
+  @media (min-width: 768px) {
+    margin-bottom: 16px;
+  }
+
+  // Медиа запрос для десктопов и выше
+  @media (min-width: 1200px) {
+  }
+}
+
+.benefit__desc {
+  color: #808080;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.71;
+
+  // Медиа запрос для планшетов и выше
+  @media (min-width: 768px) {
+    font-weight: 500;
+  }
+
+  // Медиа запрос для десктопов и выше
+  @media (min-width: 1200px) {
+    line-height: 2.15;
+  }
+}
